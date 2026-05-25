@@ -8,32 +8,26 @@
 </head>
 <body>
 
-    <header>
+    <header class="main-header">
         <h1>Crônicas da História</h1>
         <p>Uma viagem no tempo pelas grandes civilizações do passado.</p>
     </header>
 
     <main class="container">
-        <nav class="Abas-nav">
-            <button class="aba-btn active" onclick="mudarConteudo('egito')">Egito Antigo</button>
-            <button class="aba-btn" onclick="mudarConteudo('grecia')">Grécia Antiga</button>
-            <button class="aba-btn" onclick="mudarConteudo('roma')">Império Romano</button>
+        <nav class="tabs-nav">
+            <button class="tab-btn active" data-target="egito">Egito Antigo</button>
+            <button class="tab-btn" data-target="grecia">Grécia Antiga</button>
+            <button class="tab-btn" data-target="roma">Império Romano</button>
         </nav>
 
-        <article id="conteudo-historico" class="conteudo-card">
-            <h2 id="titulo-civilizacao">Egito Antigo</h2>
-            <p id="texto-civilizacao">
-                Florescendo às margens do Rio Nilo, o Egito Antigo foi uma das civilizações mais fascinantes da história. 
-                Famosos por suas pirâmides monumentais, faraós e hieróglifos, os egípcios desenvolveram avanços incríveis 
-                na medicina, astronomia e engenharia que ecoam até os dias de hoje.
-            </p>
-            <blockquote id="curiosidade-civilizacao">
-                <strong>Curiosidade:</strong> As pirâmides não foram construídas por escravos, mas sim por trabalhadores assalariados que respeitavam profundamente o Faraó.
-            </blockquote>
+        <article class="content-card">
+            <h2 id="titulo-civilizacao"></h2>
+            <p id="texto-civilizacao"></p>
+            <blockquote id="curiosidade-civilizacao"></blockquote>
         </article>
     </main>
 
-    <footer>
+    <footer class="main-footer">
         <p>&copy; 2026 Crônicas da História. Desenvolvido para amantes do passado.</p>
     </footer>
 
